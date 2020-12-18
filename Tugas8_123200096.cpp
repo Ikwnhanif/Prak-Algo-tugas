@@ -17,12 +17,16 @@ int main()
 		cout << "Pilih: "; cin >> pilih;
 		switch(pilih){
 			case 1 :
+				cout << "Jari - Jari	: "; cin >> r;
 				cout << "Luas Lingkaran adalah " << Luas(r) << endl; 
 			break;
 			case 2 :
+				cout << "Jari - Jari	: "; cin >> r; 
 				cout << "Keliling Lingkaran adalah " << Keliling(r) << endl; 
 			break;
 			case 3 :
+				cout << "Jari - Jari	: "; cin >> r; 
+				cout << "Tinggi		: "; cin >> t;
 				cout << "Volume Tabung adalah " << Volume(r,t) << endl; 
 			break;
 			default :
@@ -38,18 +42,14 @@ int main()
 	return 0;
 }
 
-double Luas(double r){
-	cout << "Jari - Jari	: "; cin >> r; 
+double Luas(double r){ 
 	return phi*r*r;
 }
 
 double Keliling(double r){
-	cout << "Jari - Jari	: "; cin >> r; 
 	return phi*2*r;
 }
 
-double Volume(double r, double t){
-	cout << "Jari - Jari	: "; cin >> r; 
-	cout << "Tinggi		: "; cin >> t; 
+double Volume(double r, double t){ 
 	return phi*r*r*t;
 }
